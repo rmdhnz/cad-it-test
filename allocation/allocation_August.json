@@ -2,12 +2,11 @@
   "Central Papua": {
     "teams": [
       "Accountant",
-      "Data Engineer",
-      "QA",
-      "Country Manager",
-      "HRD",
-      "Ansys",
-      "Sales",
+      "PM 1",
+      "Lead Mining 1",
+      "Lead Mining 2",
+      "Mining 5",
+      "Lead Mining 5",
       "Electrical Team",
       "PM 2",
       "Mining 7"
@@ -17,24 +16,26 @@
   "Bogor": {
     "teams": [
       "Mechanical",
-      "Mining 6",
-      "External 1",
-      "Mining 3",
-      "External 2"
+      "Data Engineer",
+      "QA",
+      "Ansys",
+      "Sales",
+      "Planning"
     ],
-    "remaining_quota": 1
+    "remaining_quota": 0
   },
   "East Java": {
     "teams": [
-      "Mining 2",
-      "Control",
-      "IT",
-      "Operational"
+      "RnD",
+      "Mining 4",
+      "Presales"
     ],
     "remaining_quota": 0
   },
   "Jakarta": {
     "teams": [
+      "Country Manager",
+      "HRD",
       "Country Manager",
       "HRD"
     ],
@@ -43,22 +44,21 @@
   "West Nusa Tenggara": {
     "teams": [
       "Ansys",
-      "PM 1",
-      "Lead Mining 1",
-      "Lead Mining 2",
-      "Mining 5",
-      "Lead Mining 5",
-      "Presales",
-      "Mining 4"
+      "Mining 6",
+      "External 1",
+      "Mining 3",
+      "External 2",
+      "Mining 2"
     ],
     "remaining_quota": 0
   },
   "North Maluku": {
     "teams": [
       "Embedded",
-      "RnD",
-      "Planning"
+      "IT",
+      "Operational",
+      "Control"
     ],
-    "remaining_quota": 1
+    "remaining_quota": 2
   }
 }
