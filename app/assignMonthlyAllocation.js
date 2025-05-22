@@ -1,5 +1,5 @@
-const createEmptyAllocation = require("./app/createEmptyAllocation");
-function assignMonthlyAllocation(month, regions, rules) {
+const createEmptyAllocation = require("./createEmptyAllocation");
+function assignMonthlyAllocation(month, regions, rules, teamSizeMap) {
   const allocation = createEmptyAllocation(regions);
   const teamSizeLeft = { ...teamSizeMap };
 
