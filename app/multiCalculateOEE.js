@@ -1,10 +1,10 @@
 import { DateTime, Interval } from "luxon";
-import parseTime from "./parseTime.js";
-import oeeCategory from "./oeeCategory.js";
-import totalDefectQuantity from "./totalDefectQuantity.js";
-import totalPlannedDuration from "./totalPlannedDuration.js";
-import totalPlannedQuantity from "./totalPlannedQuantity.js";
-import totalActualQuantity from "./totalActualQuantity.js";
+import parseTime from "./utils/parseTime.js";
+import oeeCategory from "./utils/oeeCategory.js";
+import totalDefectQuantity from "./utils/totalDefectQuantity.js";
+import totalPlannedDuration from "./utils/totalPlannedDuration.js";
+import totalPlannedQuantity from "./utils/totalPlannedQuantity.js";
+import totalActualQuantity from "./utils/totalActualQuantity.js";
 import fs from "fs";
 export default function multiCalculateOEE(status, production) {
   // Step 1: Group production by equipment and date

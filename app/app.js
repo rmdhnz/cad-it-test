@@ -1,8 +1,5 @@
-// const getDataFromMongo = require("./getDataFromMongo");
-import getDataFromMongo from "./getDataFromMongo.js";
-// const assignMonthlyAllocation = require("./assignMonthlyAllocation");
+import getDataFromMongo from "./utils/getDataFromMongo.js";
 import assignMonthlyAllocation from "./assignMonthlyAllocation.js";
-// const fs = require("fs");
 import fs from "fs";
 const MONTHS = [
   "January",

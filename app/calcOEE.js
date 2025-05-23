@@ -1,7 +1,7 @@
-import parseTime from "./parseTime.js";
+import parseTime from "./utils/parseTime.js";
 import calculateOEEPerDay from "./calculateOEEPerDay.js";
 import fs from "fs";
-import getDataFromMongo from "./getDataFromMongo.js";
+import getDataFromMongo from "./utils/getDataFromMongo.js";
 import multiCalculateOEE from "./multiCalculateOEE.js";
 
 export default async function run(multiple = false) {

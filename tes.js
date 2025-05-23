@@ -1,5 +1,4 @@
-import fs from "fs";
-import getDataFromMongo from "./app/getDataFromMongo.js";
+import getDataFromMongo from "./app/utils/getDataFromMongo.js";
 import multiCalculateOEE from "./app/multiCalculateOEE.js";
 
 export default async function run() {

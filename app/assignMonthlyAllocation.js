@@ -1,5 +1,4 @@
-// const createEmptyAllocation = require("./createEmptyAllocation");
-import createEmptyAllocation from "./createEmptyAllocation.js";
+import createEmptyAllocation from "./utils/createEmptyAllocation.js";
 export default function assignMonthlyAllocation(
   month,
   regions,
