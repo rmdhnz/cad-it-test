@@ -1,5 +1,11 @@
-const createEmptyAllocation = require("./createEmptyAllocation");
-function assignMonthlyAllocation(month, regions, rules, teamSizeMap) {
+// const createEmptyAllocation = require("./createEmptyAllocation");
+import createEmptyAllocation from "./createEmptyAllocation.js";
+export default function assignMonthlyAllocation(
+  month,
+  regions,
+  rules,
+  teamSizeMap
+) {
   const allocation = createEmptyAllocation(regions);
   const teamSizeLeft = { ...teamSizeMap };
 
@@ -56,5 +62,3 @@ function assignMonthlyAllocation(month, regions, rules, teamSizeMap) {
 
   return allocation;
 }
-
-module.exports = assignMonthlyAllocation;

@@ -1,6 +1,9 @@
-const getDataFromMongo = require("./getDataFromMongo");
-const assignMonthlyAllocation = require("./assignMonthlyAllocation");
-const fs = require("fs");
+// const getDataFromMongo = require("./getDataFromMongo");
+import getDataFromMongo from "./getDataFromMongo.js";
+// const assignMonthlyAllocation = require("./assignMonthlyAllocation");
+import assignMonthlyAllocation from "./assignMonthlyAllocation.js";
+// const fs = require("fs");
+import fs from "fs";
 const MONTHS = [
   "January",
   "February",
@@ -16,7 +19,7 @@ const MONTHS = [
   "December",
 ];
 
-async function app() {
+export default async function app() {
   const regions = await getDataFromMongo("regions");
   const teams = await getDataFromMongo("teams");
   const rules = JSON.parse(fs.readFileSync("rules_region_and_team.json"));
@@ -55,5 +58,3 @@ async function app() {
   );
   console.log(`✅ All Allocation saved: all_alocation.json`);
 }
-
-module.exports = app;

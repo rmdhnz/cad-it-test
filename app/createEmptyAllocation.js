@@ -1,4 +1,4 @@
-module.exports = function createEmptyAllocation(collections_name) {
+export default function createEmptyAllocation(collections_name) {
   const allocation = {};
   collections_name.forEach((collection_name) => {
     allocation[collection_name.name] = {
@@ -8,4 +8,4 @@ module.exports = function createEmptyAllocation(collections_name) {
     };
   });
   return allocation;
-};
+}

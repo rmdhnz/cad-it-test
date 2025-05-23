@@ -1,4 +1,5 @@
-const fs = require("fs");
+// const fs = require("fs");
+import fs from "fs";
 const allocations = JSON.parse(fs.readFileSync("all_allocation.json"));
 const regions = JSON.parse(fs.readFileSync("regions.json"));
 const rules = JSON.parse(fs.readFileSync("rules_region_and_team.json"));
@@ -61,11 +62,11 @@ allocations.forEach((allocation) => {
 
 //  cek team_need_work_together
 
-const checkTeamNeedWorkTogether = {};
-console.log(rules.team_need_work_together);
-return;
-rules.team_need_work_together.forEach((group) => {
-  // checkTeamNeedWorkTogether[group.group_name] = false;
-  console.log(group);
-});
-// console.log(checkTeamNeedWorkTogether);
+// const checkTeamNeedWorkTogether = {};
+// console.log(rules.team_need_work_together);
+// return;
+// rules.team_need_work_together.forEach((group) => {
+//   // checkTeamNeedWorkTogether[group.group_name] = false;
+//   console.log(group);
+// });
+// // console.log(checkTeamNeedWorkTogether);
