@@ -7,7 +7,6 @@ import totalPlannedQuantity from "./utils/totalPlannedQuantity.js";
 import totalActualQuantity from "./utils/totalActualQuantity.js";
 import fs from "fs";
 export default function multiCalculateOEE(status, production) {
-  // Step 1: Group production by equipment and date
   const prodMap = {}; // { equipment_id: { date: [productions] } }
   for (const p of production) {
     const eid = p.equipment_id;
@@ -17,7 +16,6 @@ export default function multiCalculateOEE(status, production) {
     prodMap[eid][date].push(p);
   }
 
-  // Step 2: Calculate OEE per equipment per date
   const result = [];
 
   for (const eid in prodMap) {
@@ -33,7 +31,6 @@ export default function multiCalculateOEE(status, production) {
         defectQty = totalDefectQuantity(prodList),
         totalPlannedTime = totalPlannedDuration(prodList);
 
-      // Step 3: Filter relevant status
       let running = 0,
         idle = 0,
         down = 0;
