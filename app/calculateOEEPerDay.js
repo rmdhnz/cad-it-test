@@ -1,23 +1,7 @@
-// const fs = require('fs');
-import fs from "fs";
 import { DateTime, Interval } from "luxon";
-// const { DateTime, Interval } = require("luxon");
-import parseTime from "./app/parseTime.js";
+import parseTime from "./parseTime.js";
 
-// Baca data dari file JSON
-const status = JSON.parse(fs.readFileSync("status.json"));
-const production = JSON.parse(fs.readFileSync("production.json"));
-
-// Group produksi berdasarkan tanggal
-const productionByDate = {};
-for (const p of production) {
-  const date = parseTime(p.start_production).toISODate();
-  if (!productionByDate[date]) productionByDate[date] = [];
-  productionByDate[date].push(p);
-}
-
-// Fungsi utama perhitungan OEE harian
-function calculateOEEForDate(date, productions) {
+export default function calculateOEEPerDay(date, productions, status) {
   const startDay = DateTime.fromISO(date).startOf("day");
   const endDay = DateTime.fromISO(date).endOf("day");
   const dayInterval = Interval.fromDateTimes(startDay, endDay);
@@ -83,12 +67,3 @@ function calculateOEEForDate(date, productions) {
     oee: oee.toFixed(4),
   };
 }
-
-// Hitung OEE untuk setiap tanggal
-const results = [];
-for (const date in productionByDate) {
-  results.push(calculateOEEForDate(date, productionByDate[date]));
-}
-
-// Tampilkan hasil
-console.table(results);
