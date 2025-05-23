@@ -1,94 +1,14 @@
-// const fs = require('fs');
 import fs from "fs";
-import { DateTime, Interval } from "luxon";
-// const { DateTime, Interval } = require("luxon");
-import parseTime from "./app/parseTime.js";
+import getDataFromMongo from "./app/getDataFromMongo.js";
+import multiCalculateOEE from "./app/multiCalculateOEE.js";
 
-// Baca data dari file JSON
-const status = JSON.parse(fs.readFileSync("status.json"));
-const production = JSON.parse(fs.readFileSync("production.json"));
+export default async function run() {
+  const status = await getDataFromMongo("status_data");
+  const production = await getDataFromMongo("production");
 
-// Group produksi berdasarkan tanggal
-const productionByDate = {};
-for (const p of production) {
-  const date = parseTime(p.start_production).toISODate();
-  if (!productionByDate[date]) productionByDate[date] = [];
-  productionByDate[date].push(p);
+  const result = multiCalculateOEE(status, production);
+
+  console.table(result);
 }
 
-// Fungsi utama perhitungan OEE harian
-function calculateOEEForDate(date, productions) {
-  const startDay = DateTime.fromISO(date).startOf("day");
-  const endDay = DateTime.fromISO(date).endOf("day");
-  const dayInterval = Interval.fromDateTimes(startDay, endDay);
-
-  let running = 0,
-    idle = 0,
-    down = 0;
-  let totalPlanned = 0,
-    totalActual = 0,
-    totalDefect = 0;
-  let totalPlannedTime = 0;
-
-  // Hitung komponen Quality dan Performance dari produksi
-  for (const p of productions) {
-    const start = parseTime(p.start_production);
-    const end = parseTime(p.finish_production);
-    const dur = end.diff(start, "seconds").seconds;
-
-    totalPlannedTime += p.planned_duration_in_second;
-    totalPlanned += p.planned_quantity;
-    totalActual += p.actual_quantity;
-    totalDefect += p.defect_quantity;
-  }
-
-  // Filter status yang terjadi pada tanggal itu dan overlap dengan produksi
-  const relevantStatuses = status.filter((s) => {
-    const start = parseTime(s.start_time);
-    const end = parseTime(s.end_time);
-    const interval = Interval.fromDateTimes(start, end);
-    return interval.overlaps(dayInterval);
-  });
-
-  // Hitung total waktu status dalam hari itu
-  for (const s of relevantStatuses) {
-    const start = parseTime(s.start_time);
-    const end = parseTime(s.end_time);
-    const interval = Interval.fromDateTimes(start, end);
-    const overlap = interval.intersection(dayInterval);
-    if (!overlap) continue;
-
-    const dur = overlap.toDuration().as("seconds");
-    if (s.status === "RUNNING") running += dur;
-    else if (s.status === "IDLE") idle += dur;
-    else if (s.status === "DOWN") down += dur;
-    // OFFLINE tidak dihitung
-  }
-
-  const totalTime = running + idle + down;
-  const availability = totalTime > 0 ? (running + idle) / totalTime : 0;
-  const performance =
-    totalActual > 0 && totalPlanned > 0
-      ? Math.min(totalActual / totalPlanned, 1)
-      : 0;
-  const quality =
-    totalActual > 0 ? (totalActual - totalDefect) / totalActual : 0;
-  const oee = availability * performance * quality;
-
-  return {
-    date,
-    availability: availability.toFixed(4),
-    performance: performance.toFixed(4),
-    quality: quality.toFixed(4),
-    oee: oee.toFixed(4),
-  };
-}
-
-// Hitung OEE untuk setiap tanggal
-const results = [];
-for (const date in productionByDate) {
-  results.push(calculateOEEForDate(date, productionByDate[date]));
-}
-
-// Tampilkan hasil
-console.table(results);
+run();

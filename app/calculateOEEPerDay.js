@@ -1,6 +1,10 @@
 import { DateTime, Interval } from "luxon";
 import parseTime from "./parseTime.js";
 import oeeCategory from "./oeeCategory.js";
+import totalDefectQuantity from "./totalDefectQuantity.js";
+import totalPlannedDuration from "./totalPlannedDuration.js";
+import totalPlannedQuantity from "./totalPlannedQuantity.js";
+import totalActualQuantity from "./totalActualQuantity.js";
 export default function calculateOEEPerDay(date, productions, status) {
   const startDay = DateTime.fromISO(date).startOf("day");
   const endDay = DateTime.fromISO(date).endOf("day");
@@ -9,18 +13,12 @@ export default function calculateOEEPerDay(date, productions, status) {
   let running = 0,
     idle = 0,
     down = 0;
-  let totalPlanned = 0,
-    totalActual = 0,
-    totalDefect = 0;
-  let totalPlannedTime = 0;
+  let totalPlanned = totalPlannedQuantity(productions),
+    totalActual = totalActualQuantity(productions),
+    totalDefect = totalDefectQuantity(productions);
+  let totalPlannedTime = totalPlannedDuration(productions);
 
   // Hitung komponen Quality dan Performance dari produksi
-  for (const p of productions) {
-    totalPlannedTime += p.planned_duration_in_second;
-    totalPlanned += p.planned_quantity;
-    totalActual += p.actual_quantity;
-    totalDefect += p.defect_quantity;
-  }
 
   // Filter status yang terjadi pada tanggal itu dan overlap dengan produksi
   const relevantStatuses = status.filter((s) => {
