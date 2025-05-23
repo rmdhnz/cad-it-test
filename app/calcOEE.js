@@ -1,5 +1,6 @@
 import parseTime from "./parseTime.js";
 import calculateOEEPerDay from "./calculateOEEPerDay.js";
+import fs from "fs";
 import getDataFromMongo from "./getDataFromMongo.js";
 
 export default async function run() {
@@ -20,5 +21,7 @@ export default async function run() {
   }
 
   // Tampilkan hasil
-  console.table(results);
+  console.log(results);
+  fs.writeFileSync("oee_results.json", JSON.stringify(results, null, 2));
+  console.log("✅ OEE results saved to oee_results.json");
 }

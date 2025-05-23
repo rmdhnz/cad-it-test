@@ -18,7 +18,6 @@ export default function calculateOEEPerDay(date, productions, status) {
   for (const p of productions) {
     const start = parseTime(p.start_production);
     const end = parseTime(p.finish_production);
-    const dur = end.diff(start, "seconds").seconds;
 
     totalPlannedTime += p.planned_duration_in_second;
     totalPlanned += p.planned_quantity;
