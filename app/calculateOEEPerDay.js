@@ -1,6 +1,6 @@
 import { DateTime, Interval } from "luxon";
 import parseTime from "./parseTime.js";
-
+import oeeCategory from "./oeeCategory.js";
 export default function calculateOEEPerDay(date, productions, status) {
   const startDay = DateTime.fromISO(date).startOf("day");
   const endDay = DateTime.fromISO(date).endOf("day");
@@ -16,9 +16,6 @@ export default function calculateOEEPerDay(date, productions, status) {
 
   // Hitung komponen Quality dan Performance dari produksi
   for (const p of productions) {
-    const start = parseTime(p.start_production);
-    const end = parseTime(p.finish_production);
-
     totalPlannedTime += p.planned_duration_in_second;
     totalPlanned += p.planned_quantity;
     totalActual += p.actual_quantity;
@@ -64,5 +61,6 @@ export default function calculateOEEPerDay(date, productions, status) {
     performance: performance.toFixed(4),
     quality: quality.toFixed(4),
     oee: oee.toFixed(4),
+    category: oeeCategory(oee),
   };
 }

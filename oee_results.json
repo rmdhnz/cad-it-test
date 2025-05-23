@@ -4,209 +4,239 @@
     "availability": "0.6784",
     "performance": "0.9343",
     "quality": "0.9297",
-    "oee": "0.5893"
+    "oee": "0.5893",
+    "category": "Minimum"
   },
   {
     "date": "2024-12-02",
     "availability": "0.6522",
     "performance": "0.9267",
     "quality": "0.9209",
-    "oee": "0.5566"
+    "oee": "0.5566",
+    "category": "Minimum"
   },
   {
     "date": "2024-12-03",
     "availability": "0.6947",
     "performance": "0.9387",
     "quality": "0.9347",
-    "oee": "0.6095"
+    "oee": "0.6095",
+    "category": "Good"
   },
   {
     "date": "2024-12-04",
     "availability": "0.6292",
     "performance": "0.9453",
     "quality": "0.9421",
-    "oee": "0.5603"
+    "oee": "0.5603",
+    "category": "Minimum"
   },
   {
     "date": "2024-12-05",
     "availability": "0.6738",
     "performance": "0.9398",
     "quality": "0.9359",
-    "oee": "0.5927"
+    "oee": "0.5927",
+    "category": "Minimum"
   },
   {
     "date": "2024-12-06",
     "availability": "0.6050",
     "performance": "0.9406",
     "quality": "0.9368",
-    "oee": "0.5332"
+    "oee": "0.5332",
+    "category": "Minimum"
   },
   {
     "date": "2024-12-10",
     "availability": "0.6679",
     "performance": "0.9423",
     "quality": "0.9388",
-    "oee": "0.5908"
+    "oee": "0.5908",
+    "category": "Minimum"
   },
   {
     "date": "2024-12-11",
     "availability": "0.7436",
     "performance": "0.9381",
     "quality": "0.9340",
-    "oee": "0.6515"
+    "oee": "0.6515",
+    "category": "Good"
   },
   {
     "date": "2024-12-12",
     "availability": "0.5156",
     "performance": "0.9551",
     "quality": "0.9529",
-    "oee": "0.4693"
+    "oee": "0.4693",
+    "category": "Bad"
   },
   {
     "date": "2024-12-13",
     "availability": "0.5378",
     "performance": "0.9333",
     "quality": "0.9286",
-    "oee": "0.4661"
+    "oee": "0.4661",
+    "category": "Bad"
   },
   {
     "date": "2024-12-14",
     "availability": "0.6455",
     "performance": "0.9284",
     "quality": "0.9229",
-    "oee": "0.5530"
+    "oee": "0.5530",
+    "category": "Minimum"
   },
   {
     "date": "2024-12-15",
     "availability": "0.7139",
     "performance": "0.9469",
     "quality": "0.9440",
-    "oee": "0.6381"
+    "oee": "0.6381",
+    "category": "Good"
   },
   {
     "date": "2024-12-16",
     "availability": "0.6975",
     "performance": "0.9394",
     "quality": "0.9354",
-    "oee": "0.6129"
+    "oee": "0.6129",
+    "category": "Good"
   },
   {
     "date": "2024-12-17",
     "availability": "0.7166",
     "performance": "0.9471",
     "quality": "0.9441",
-    "oee": "0.6408"
+    "oee": "0.6408",
+    "category": "Good"
   },
   {
     "date": "2024-12-18",
     "availability": "0.5571",
     "performance": "0.9423",
     "quality": "0.9388",
-    "oee": "0.4928"
+    "oee": "0.4928",
+    "category": "Bad"
   },
   {
     "date": "2024-12-19",
     "availability": "0.6895",
     "performance": "0.9404",
     "quality": "0.9366",
-    "oee": "0.6073"
+    "oee": "0.6073",
+    "category": "Good"
   },
   {
     "date": "2024-12-20",
     "availability": "0.6436",
     "performance": "0.9388",
     "quality": "0.9349",
-    "oee": "0.5649"
+    "oee": "0.5649",
+    "category": "Minimum"
   },
   {
     "date": "2024-12-21",
     "availability": "0.6455",
     "performance": "0.9424",
     "quality": "0.9389",
-    "oee": "0.5712"
+    "oee": "0.5712",
+    "category": "Minimum"
   },
   {
     "date": "2024-12-22",
     "availability": "0.5952",
     "performance": "0.9320",
     "quality": "0.9270",
-    "oee": "0.5142"
+    "oee": "0.5142",
+    "category": "Minimum"
   },
   {
     "date": "2024-12-23",
     "availability": "0.5733",
     "performance": "0.9414",
     "quality": "0.9378",
-    "oee": "0.5062"
+    "oee": "0.5062",
+    "category": "Minimum"
   },
   {
     "date": "2024-12-24",
     "availability": "0.6410",
     "performance": "0.9349",
     "quality": "0.9304",
-    "oee": "0.5576"
+    "oee": "0.5576",
+    "category": "Minimum"
   },
   {
     "date": "2024-12-25",
     "availability": "0.7348",
     "performance": "0.9412",
     "quality": "0.9375",
-    "oee": "0.6484"
+    "oee": "0.6484",
+    "category": "Good"
   },
   {
     "date": "2024-12-26",
     "availability": "0.6570",
     "performance": "0.9447",
     "quality": "0.9415",
-    "oee": "0.5844"
+    "oee": "0.5844",
+    "category": "Minimum"
   },
   {
     "date": "2024-12-27",
     "availability": "0.6305",
     "performance": "0.9419",
     "quality": "0.9383",
-    "oee": "0.5573"
+    "oee": "0.5573",
+    "category": "Minimum"
   },
   {
     "date": "2024-12-28",
     "availability": "0.5255",
     "performance": "0.9388",
     "quality": "0.9349",
-    "oee": "0.4612"
+    "oee": "0.4612",
+    "category": "Bad"
   },
   {
     "date": "2024-12-07",
     "availability": "0.5805",
     "performance": "0.9435",
     "quality": "0.9402",
-    "oee": "0.5150"
+    "oee": "0.5150",
+    "category": "Minimum"
   },
   {
     "date": "2024-12-08",
     "availability": "0.4790",
     "performance": "0.9301",
     "quality": "0.9249",
-    "oee": "0.4120"
+    "oee": "0.4120",
+    "category": "Bad"
   },
   {
     "date": "2024-12-09",
     "availability": "0.6883",
     "performance": "0.9459",
     "quality": "0.9429",
-    "oee": "0.6139"
+    "oee": "0.6139",
+    "category": "Good"
   },
   {
     "date": "2024-12-29",
     "availability": "0.6493",
     "performance": "0.9286",
     "quality": "0.9231",
-    "oee": "0.5565"
+    "oee": "0.5565",
+    "category": "Minimum"
   },
   {
     "date": "2024-12-30",
     "availability": "0.5259",
     "performance": "0.9769",
     "quality": "0.9764",
-    "oee": "0.5016"
+    "oee": "0.5016",
+    "category": "Minimum"
   }
 ]

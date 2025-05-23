@@ -21,7 +21,7 @@ export default async function run() {
   }
 
   // Tampilkan hasil
-  console.log(results);
+  console.table(results);
   fs.writeFileSync("oee_results.json", JSON.stringify(results, null, 2));
   console.log("✅ OEE results saved to oee_results.json");
 }
