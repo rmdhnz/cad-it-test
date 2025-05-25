@@ -44,6 +44,8 @@ app/
 ─teams.json
 ```
 
+Didalam folder `utils` berisi kumpulan fungsi helper yang dirancang untuk menyederhanakan dan mempercepat proses pengembangan program.
+
 ## ⚙️ Cara Menjalankan
 
 1. Pastikan Node.js sudah terinstal
@@ -80,7 +82,7 @@ app/
 
 ## 📦 Team Allocation
 
-Program ini digunakan untuk melakukan alokasi otomatis tim ke region setiap bulannya, berdasarkan kapasitas region dan aturan kerja sama antar tim
+Program ini digunakan untuk melakukan alokasi otomatis tim ke region setiap bulannya, berdasarkan kapasitas region dan aturan kerja sama antar tim.
 
 ### Fitur
 
@@ -93,3 +95,34 @@ Program ini digunakan untuk melakukan alokasi otomatis tim ke region setiap bula
 ✅ Output alokasi disimpan sebagai file JSON per bulan.
 
 ✅ Mencatat sisa kuota di tiap region setelah alokasi.
+
+### Algoritma
+
+Berikut penjelasan algoritma yang digunakan
+
+1. Loading data
+   ```shell
+    const regions = await getDataFromMongo("regions")
+    const teams = await getDataFromMongo("teams")
+    const rules = await getDataFromMongo("rules_region_and_team.json")
+   ```
+
+## OEE Calculation
+
+Program ini menghitung Overall Equipment Effectiveness (OEE) berdasarkan data status mesin dan data produksi. Perhitungan dilakukan untuk setiap peralatan (equipment) dan setiap hari (multi-day)
+
+$$
+OEE = Availability * Performance * Quality
+$$
+
+$$
+A =\frac{(∑Running + ∑IDLE)}{(∑Time)}
+$$
+
+$$
+P = \frac{Ideal Cycle Time}{Actual Cycle Time}
+$$
+
+$$
+Q = \frac{∑Actual Quantity - ∑Total Defect Quantity}{∑Actual Quantity}
+$$
