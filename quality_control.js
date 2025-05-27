@@ -1,21 +1,36 @@
 // const fs = require("fs");
 import fs from "fs";
+import { resourceUsage } from "process";
+import { CLIENT_RENEG_LIMIT } from "tls";
 const allocations = JSON.parse(fs.readFileSync("all_allocation.json"));
 const regions = JSON.parse(fs.readFileSync("regions.json"));
 const rules = JSON.parse(fs.readFileSync("rules_region_and_team.json"));
 
 // cek fixed timm tiap region
-
 const checkFixedTeamEachRegion = {};
 rules.fixed_team_in_region.forEach((region) => {
   checkFixedTeamEachRegion[region.region] = false;
   // console.log(region);
 });
 
-// console.log(checkFixedTeamEachRegion);
-
-let i = 0;
+let total_remaining_quota = [];
 allocations.forEach((allocation) => {
+  let total_quota = 0;
+  for (let region in allocation) {
+    total_quota += allocation[region].remaining_quota;
+  }
+  total_remaining_quota.push(total_quota);
+});
+
+total_remaining_quota.forEach((quota) => {
+  console.log("Total remaining quota: " + quota);
+});
+
+/*
+let i = 0,
+  remaining_quota = [];
+allocations.forEach((allocation) => {
+  let total_quota = 0;
   i++;
   for (let region in allocation) {
     const teams = allocation[region].teams;
@@ -52,6 +67,7 @@ allocations.forEach((allocation) => {
       console.log("Quota " + quota);
       console.log("Total Member " + used);
     }
+    total_quota+=()
   }
   if (Object.values(checkFixedTeamEachRegion).every((val) => val === true)) {
     console.log("Bulan ke " + i + " (Terpenuhi)");
@@ -70,3 +86,6 @@ allocations.forEach((allocation) => {
 //   console.log(group);
 // });
 // // console.log(checkTeamNeedWorkTogether);
+
+
+*/

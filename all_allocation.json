@@ -3,710 +3,13 @@
     "Central Papua": {
       "teams": [
         "Accountant",
-        "Mining 6",
-        "External 1",
-        "PM 2",
-        "Planning",
-        "Mining 7"
-      ],
-      "remaining_quota": 0
-    },
-    "Bogor": {
-      "teams": [
-        "Mechanical",
-        "Mining 5",
-        "Lead Mining 5",
-        "IT",
-        "Electrical Team",
-        "Operational"
-      ],
-      "remaining_quota": 0
-    },
-    "East Java": {
-      "teams": [
-        "Mining 2",
-        "RnD"
-      ],
-      "remaining_quota": 3
-    },
-    "Jakarta": {
-      "teams": [
-        "Country Manager",
-        "HRD"
-      ],
-      "remaining_quota": 0
-    },
-    "West Nusa Tenggara": {
-      "teams": [
-        "Ansys",
-        "Data Engineer",
-        "QA",
-        "Mining 3",
-        "External 2"
-      ],
-      "remaining_quota": 3
-    },
-    "North Maluku": {
-      "teams": [
-        "Embedded",
         "PM 1",
         "Lead Mining 1",
         "Lead Mining 2",
+        "Mining 6",
+        "External 1",
         "Country Manager",
         "HRD",
-        "Ansys",
-        "Sales",
-        "Mining 4",
-        "Control"
-      ],
-      "remaining_quota": 0
-    }
-  },
-  {
-    "Central Papua": {
-      "teams": [
-        "Accountant",
-        "Mining 7",
-        "Electrical Team",
-        "PM 2",
-        "Planning",
-        "Mining 2"
-      ],
-      "remaining_quota": 0
-    },
-    "Bogor": {
-      "teams": [
-        "Mechanical",
-        "Ansys",
-        "Sales",
-        "IT",
-        "Presales",
-        "Operational"
-      ],
-      "remaining_quota": 2
-    },
-    "East Java": {
-      "teams": [
-        "PM 1",
-        "Lead Mining 1",
-        "Lead Mining 2",
-        "Data Engineer",
-        "QA",
-        "Mining 3",
-        "External 2",
-        "Country Manager",
-        "HRD"
-      ],
-      "remaining_quota": 1
-    },
-    "Jakarta": {
-      "teams": [
-        "Country Manager",
-        "HRD"
-      ],
-      "remaining_quota": 0
-    },
-    "West Nusa Tenggara": {
-      "teams": [
-        "Ansys",
-        "Mining 5",
-        "Lead Mining 5",
-        "Mining 6",
-        "External 1",
-        "Mining 4"
-      ],
-      "remaining_quota": 1
-    },
-    "North Maluku": {
-      "teams": [
-        "Embedded",
-        "Control"
-      ],
-      "remaining_quota": 8
-    }
-  },
-  {
-    "Central Papua": {
-      "teams": [
-        "Accountant",
-        "PM 1",
-        "Lead Mining 1",
-        "Lead Mining 2",
-        "Mining 6",
-        "External 1",
-        "Ansys",
-        "Sales",
-        "Electrical Team",
-        "Operational"
-      ],
-      "remaining_quota": 0
-    },
-    "Bogor": {
-      "teams": [
-        "Mechanical",
-        "Data Engineer",
-        "QA",
-        "Mining 2"
-      ],
-      "remaining_quota": 0
-    },
-    "East Java": {
-      "teams": [
-        "Mining 3",
-        "External 2",
-        "Presales",
-        "Mining 4",
-        "Mining 7",
-        "PM 2"
-      ],
-      "remaining_quota": 1
-    },
-    "Jakarta": {
-      "teams": [
-        "Country Manager",
-        "HRD"
-      ],
-      "remaining_quota": 0
-    },
-    "West Nusa Tenggara": {
-      "teams": [
-        "Ansys",
-        "Mining 5",
-        "Lead Mining 5",
-        "RnD"
-      ],
-      "remaining_quota": 1
-    },
-    "North Maluku": {
-      "teams": [
-        "Embedded",
-        "Country Manager",
-        "HRD",
-        "Control",
-        "Planning",
-        "IT"
-      ],
-      "remaining_quota": 0
-    }
-  },
-  {
-    "Central Papua": {
-      "teams": [
-        "Accountant",
-        "Mining 3",
-        "External 2",
-        "Electrical Team",
-        "Planning",
-        "Operational"
-      ],
-      "remaining_quota": 0
-    },
-    "Bogor": {
-      "teams": [
-        "Mechanical",
-        "Mining 6",
-        "External 1",
-        "Ansys",
-        "Sales",
-        "Mining 2",
-        "PM 2"
-      ],
-      "remaining_quota": 0
-    },
-    "East Java": {
-      "teams": [
-        "PM 1",
-        "Lead Mining 1",
-        "Lead Mining 2",
-        "Data Engineer",
-        "QA",
-        "IT",
-        "Mining 7"
-      ],
-      "remaining_quota": 1
-    },
-    "Jakarta": {
-      "teams": [
-        "Country Manager",
-        "HRD"
-      ],
-      "remaining_quota": 0
-    },
-    "West Nusa Tenggara": {
-      "teams": [
-        "Ansys",
-        "Mining 5",
-        "Lead Mining 5",
-        "Country Manager",
-        "HRD",
-        "RnD"
-      ],
-      "remaining_quota": 1
-    },
-    "North Maluku": {
-      "teams": [
-        "Embedded",
-        "Control",
-        "Presales",
-        "Mining 4"
-      ],
-      "remaining_quota": 0
-    }
-  },
-  {
-    "Central Papua": {
-      "teams": [
-        "Accountant",
-        "PM 1",
-        "Lead Mining 1",
-        "Lead Mining 2",
-        "Mining 3",
-        "External 2",
-        "Country Manager",
-        "HRD",
-        "IT"
-      ],
-      "remaining_quota": 0
-    },
-    "Bogor": {
-      "teams": [
-        "Mechanical",
-        "Mining 6",
-        "External 1",
-        "Ansys",
-        "Sales",
-        "Operational",
-        "Planning"
-      ],
-      "remaining_quota": 0
-    },
-    "East Java": {
-      "teams": [
-        "Mining 5",
-        "Lead Mining 5",
-        "Mining 2",
-        "Presales",
-        "Electrical Team",
-        "PM 2"
-      ],
-      "remaining_quota": 1
-    },
-    "Jakarta": {
-      "teams": [
-        "Country Manager",
-        "HRD"
-      ],
-      "remaining_quota": 0
-    },
-    "West Nusa Tenggara": {
-      "teams": [
-        "Ansys",
-        "Mining 4",
-        "RnD",
-        "Mining 7"
-      ],
-      "remaining_quota": 1
-    },
-    "North Maluku": {
-      "teams": [
-        "Embedded",
-        "Data Engineer",
-        "QA",
-        "Control"
-      ],
-      "remaining_quota": 0
-    }
-  },
-  {
-    "Central Papua": {
-      "teams": [
-        "Accountant",
-        "Mining 6",
-        "External 1",
-        "Mining 3",
-        "External 2",
-        "Ansys",
-        "Sales"
-      ],
-      "remaining_quota": 0
-    },
-    "Bogor": {
-      "teams": [
-        "Mechanical",
-        "PM 1",
-        "Lead Mining 1",
-        "Lead Mining 2",
-        "PM 2",
-        "Planning",
-        "Electrical Team",
-        "Presales"
-      ],
-      "remaining_quota": 0
-    },
-    "East Java": {
-      "teams": [
-        "Operational",
-        "Mining 2",
-        "RnD"
-      ],
-      "remaining_quota": 1
-    },
-    "Jakarta": {
-      "teams": [
-        "Country Manager",
-        "HRD"
-      ],
-      "remaining_quota": 0
-    },
-    "West Nusa Tenggara": {
-      "teams": [
-        "Ansys",
-        "Data Engineer",
-        "QA",
-        "Mining 5",
-        "Lead Mining 5",
-        "Mining 7"
-      ],
-      "remaining_quota": 1
-    },
-    "North Maluku": {
-      "teams": [
-        "Embedded",
-        "Country Manager",
-        "HRD",
-        "IT",
-        "Mining 4",
-        "Control"
-      ],
-      "remaining_quota": 0
-    }
-  },
-  {
-    "Central Papua": {
-      "teams": [
-        "Accountant",
-        "Mining 5",
-        "Lead Mining 5",
-        "Mining 6",
-        "External 1",
-        "Electrical Team"
-      ],
-      "remaining_quota": 0
-    },
-    "Bogor": {
-      "teams": [
-        "Mechanical",
-        "Mining 3",
-        "External 2",
-        "Country Manager",
-        "HRD",
-        "Mining 7",
-        "IT",
-        "PM 2"
-      ],
-      "remaining_quota": 0
-    },
-    "East Java": {
-      "teams": [
-        "PM 1",
-        "Lead Mining 1",
-        "Lead Mining 2",
-        "Data Engineer",
-        "QA",
-        "Ansys",
-        "Sales",
-        "Presales",
-        "Operational"
-      ],
-      "remaining_quota": 0
-    },
-    "Jakarta": {
-      "teams": [
-        "Country Manager",
-        "HRD"
-      ],
-      "remaining_quota": 0
-    },
-    "West Nusa Tenggara": {
-      "teams": [
-        "Ansys",
-        "Control",
-        "Planning",
-        "Mining 4"
-      ],
-      "remaining_quota": 2
-    },
-    "North Maluku": {
-      "teams": [
-        "Embedded",
-        "RnD",
-        "Mining 2"
-      ],
-      "remaining_quota": 0
-    }
-  },
-  {
-    "Central Papua": {
-      "teams": [
-        "Accountant",
-        "Mining 5",
-        "Lead Mining 5",
-        "Mining 3",
-        "External 2",
-        "Country Manager",
-        "HRD",
-        "PM 2"
-      ],
-      "remaining_quota": 0
-    },
-    "Bogor": {
-      "teams": [
-        "Mechanical",
-        "Data Engineer",
-        "QA",
-        "Mining 7",
-        "Electrical Team",
-        "Operational"
-      ],
-      "remaining_quota": 0
-    },
-    "East Java": {
-      "teams": [
-        "Ansys",
-        "Sales",
-        "Presales",
-        "RnD"
-      ],
-      "remaining_quota": 3
-    },
-    "Jakarta": {
-      "teams": [
-        "Country Manager",
-        "HRD"
-      ],
-      "remaining_quota": 0
-    },
-    "West Nusa Tenggara": {
-      "teams": [
-        "Ansys",
-        "IT",
-        "Mining 4",
-        "Control"
-      ],
-      "remaining_quota": 2
-    },
-    "North Maluku": {
-      "teams": [
-        "Embedded",
-        "PM 1",
-        "Lead Mining 1",
-        "Lead Mining 2",
-        "Mining 6",
-        "External 1",
-        "Mining 2"
-      ],
-      "remaining_quota": 1
-    }
-  },
-  {
-    "Central Papua": {
-      "teams": [
-        "Accountant",
-        "PM 1",
-        "Lead Mining 1",
-        "Lead Mining 2",
-        "Data Engineer",
-        "QA",
-        "Operational"
-      ],
-      "remaining_quota": 0
-    },
-    "Bogor": {
-      "teams": [
-        "Mechanical",
-        "Planning",
-        "IT",
-        "Mining 2"
-      ],
-      "remaining_quota": 0
-    },
-    "East Java": {
-      "teams": [
-        "Mining 5",
-        "Lead Mining 5",
-        "Mining 6",
-        "External 1",
-        "Mining 3",
-        "External 2"
-      ],
-      "remaining_quota": 0
-    },
-    "Jakarta": {
-      "teams": [
-        "Country Manager",
-        "HRD",
-        "Country Manager",
-        "HRD"
-      ],
-      "remaining_quota": 0
-    },
-    "West Nusa Tenggara": {
-      "teams": [
-        "Ansys",
-        "Electrical Team",
-        "PM 2",
-        "Presales",
-        "RnD"
-      ],
-      "remaining_quota": 1
-    },
-    "North Maluku": {
-      "teams": [
-        "Embedded",
-        "Ansys",
-        "Sales",
-        "Control",
-        "Mining 4",
-        "Mining 7"
-      ],
-      "remaining_quota": 1
-    }
-  },
-  {
-    "Central Papua": {
-      "teams": [
-        "Accountant",
-        "PM 1",
-        "Lead Mining 1",
-        "Lead Mining 2",
-        "Mining 5",
-        "Lead Mining 5",
-        "Planning"
-      ],
-      "remaining_quota": 0
-    },
-    "Bogor": {
-      "teams": [
-        "Mechanical",
-        "Data Engineer",
-        "QA",
-        "Presales",
-        "PM 2"
-      ],
-      "remaining_quota": 0
-    },
-    "East Java": {
-      "teams": [
-        "Mining 6",
-        "External 1",
-        "RnD",
-        "Mining 7"
-      ],
-      "remaining_quota": 0
-    },
-    "Jakarta": {
-      "teams": [
-        "Country Manager",
-        "HRD"
-      ],
-      "remaining_quota": 0
-    },
-    "West Nusa Tenggara": {
-      "teams": [
-        "Ansys",
-        "Mining 3",
-        "External 2",
-        "Mining 2",
-        "Mining 4",
-        "Electrical Team"
-      ],
-      "remaining_quota": 1
-    },
-    "North Maluku": {
-      "teams": [
-        "Embedded",
-        "Country Manager",
-        "HRD",
-        "Ansys",
-        "Sales",
-        "Operational",
-        "Control",
-        "IT"
-      ],
-      "remaining_quota": 1
-    }
-  },
-  {
-    "Central Papua": {
-      "teams": [
-        "Accountant",
-        "Mining 6",
-        "External 1",
-        "Presales",
-        "PM 2",
-        "Operational"
-      ],
-      "remaining_quota": 0
-    },
-    "Bogor": {
-      "teams": [
-        "Mechanical",
-        "PM 1",
-        "Lead Mining 1",
-        "Lead Mining 2",
-        "Ansys",
-        "Sales",
-        "IT",
-        "Mining 2"
-      ],
-      "remaining_quota": 0
-    },
-    "East Java": {
-      "teams": [
-        "Mining 5",
-        "Lead Mining 5",
-        "RnD",
-        "Electrical Team"
-      ],
-      "remaining_quota": 1
-    },
-    "Jakarta": {
-      "teams": [
-        "Country Manager",
-        "HRD",
-        "Country Manager",
-        "HRD"
-      ],
-      "remaining_quota": 0
-    },
-    "West Nusa Tenggara": {
-      "teams": [
-        "Ansys",
-        "Mining 3",
-        "External 2",
-        "Control",
-        "Mining 7"
-      ],
-      "remaining_quota": 2
-    },
-    "North Maluku": {
-      "teams": [
-        "Embedded",
-        "Data Engineer",
-        "QA",
-        "Planning"
-      ],
-      "remaining_quota": 3
-    }
-  },
-  {
-    "Central Papua": {
-      "teams": [
-        "Accountant",
-        "IT",
-        "Mining 7",
-        "Operational",
-        "PM 2",
         "Presales"
       ],
       "remaining_quota": 0
@@ -714,22 +17,19 @@
     "Bogor": {
       "teams": [
         "Mechanical",
-        "Data Engineer",
-        "QA",
-        "Country Manager",
-        "HRD",
-        "Ansys",
-        "Sales",
-        "Electrical Team"
+        "RnD",
+        "Operational",
+        "PM 2"
       ],
-      "remaining_quota": 3
+      "remaining_quota": 0
     },
     "East Java": {
       "teams": [
-        "Mining 5",
-        "Lead Mining 5",
-        "Control",
-        "Mining 2"
+        "Data Engineer",
+        "QA",
+        "Mining 3",
+        "External 2",
+        "Mining 4"
       ],
       "remaining_quota": 0
     },
@@ -743,12 +43,203 @@
     "West Nusa Tenggara": {
       "teams": [
         "Ansys",
-        "Mining 6",
-        "External 1",
-        "Mining 4",
+        "Control",
+        "IT",
+        "Mining 2",
+        "Electrical Team"
+      ],
+      "remaining_quota": 0
+    },
+    "North Maluku": {
+      "teams": [
+        "Embedded",
+        "Mining 5",
+        "Lead Mining 5",
+        "Ansys",
+        "Sales",
+        "Mining 7",
         "Planning"
       ],
-      "remaining_quota": 3
+      "remaining_quota": 2
+    }
+  },
+  {
+    "Central Papua": {
+      "teams": [
+        "Accountant",
+        "PM 1",
+        "Lead Mining 1",
+        "Lead Mining 2",
+        "Data Engineer",
+        "QA",
+        "Ansys",
+        "Sales",
+        "PM 2"
+      ],
+      "remaining_quota": 0
+    },
+    "Bogor": {
+      "teams": [
+        "Mechanical",
+        "Mining 5",
+        "Lead Mining 5",
+        "Planning",
+        "Mining 7",
+        "Electrical Team"
+      ],
+      "remaining_quota": 0
+    },
+    "East Java": {
+      "teams": [
+        "Mining 6",
+        "External 1",
+        "RnD",
+        "Operational"
+      ],
+      "remaining_quota": 0
+    },
+    "Jakarta": {
+      "teams": [
+        "Country Manager",
+        "HRD"
+      ],
+      "remaining_quota": 0
+    },
+    "West Nusa Tenggara": {
+      "teams": [
+        "Ansys",
+        "Country Manager",
+        "HRD",
+        "Control",
+        "Mining 4",
+        "IT"
+      ],
+      "remaining_quota": 2
+    },
+    "North Maluku": {
+      "teams": [
+        "Embedded",
+        "Mining 3",
+        "External 2",
+        "Mining 2",
+        "Presales"
+      ],
+      "remaining_quota": 0
+    }
+  },
+  {
+    "Central Papua": {
+      "teams": [
+        "Accountant",
+        "Mining 3",
+        "External 2",
+        "Ansys",
+        "Sales",
+        "Presales",
+        "PM 2",
+        "Electrical Team"
+      ],
+      "remaining_quota": 0
+    },
+    "Bogor": {
+      "teams": [
+        "Mechanical",
+        "Mining 6",
+        "External 1",
+        "Control"
+      ],
+      "remaining_quota": 0
+    },
+    "East Java": {
+      "teams": [
+        "PM 1",
+        "Lead Mining 1",
+        "Lead Mining 2",
+        "Data Engineer",
+        "QA",
+        "Mining 5",
+        "Lead Mining 5",
+        "Country Manager",
+        "HRD"
+      ],
+      "remaining_quota": 1
+    },
+    "Jakarta": {
+      "teams": [
+        "Country Manager",
+        "HRD"
+      ],
+      "remaining_quota": 0
+    },
+    "West Nusa Tenggara": {
+      "teams": [
+        "Ansys",
+        "RnD",
+        "Mining 7",
+        "IT"
+      ],
+      "remaining_quota": 1
+    },
+    "North Maluku": {
+      "teams": [
+        "Embedded",
+        "Planning",
+        "Operational",
+        "Mining 2",
+        "Mining 4"
+      ],
+      "remaining_quota": 0
+    }
+  },
+  {
+    "Central Papua": {
+      "teams": [
+        "Accountant",
+        "Mining 5",
+        "Lead Mining 5",
+        "Mining 6",
+        "External 1",
+        "PM 2"
+      ],
+      "remaining_quota": 0
+    },
+    "Bogor": {
+      "teams": [
+        "Mechanical",
+        "Ansys",
+        "Sales",
+        "Control",
+        "IT",
+        "Electrical Team"
+      ],
+      "remaining_quota": 0
+    },
+    "East Java": {
+      "teams": [
+        "Country Manager",
+        "HRD",
+        "RnD",
+        "Mining 2",
+        "Mining 7"
+      ],
+      "remaining_quota": 1
+    },
+    "Jakarta": {
+      "teams": [
+        "Country Manager",
+        "HRD"
+      ],
+      "remaining_quota": 0
+    },
+    "West Nusa Tenggara": {
+      "teams": [
+        "Ansys",
+        "Data Engineer",
+        "QA",
+        "Presales",
+        "Mining 4"
+      ],
+      "remaining_quota": 1
     },
     "North Maluku": {
       "teams": [
@@ -757,9 +248,520 @@
         "Lead Mining 1",
         "Lead Mining 2",
         "Mining 3",
-        "External 2"
+        "External 2",
+        "Planning",
+        "Operational"
+      ],
+      "remaining_quota": 0
+    }
+  },
+  {
+    "Central Papua": {
+      "teams": [
+        "Accountant",
+        "Mining 5",
+        "Lead Mining 5",
+        "Country Manager",
+        "HRD",
+        "Presales",
+        "Mining 7",
+        "PM 2"
+      ],
+      "remaining_quota": 0
+    },
+    "Bogor": {
+      "teams": [
+        "Mechanical",
+        "Mining 6",
+        "External 1",
+        "Ansys",
+        "Sales",
+        "Mining 2",
+        "Electrical Team"
+      ],
+      "remaining_quota": 0
+    },
+    "East Java": {
+      "teams": [
+        "PM 1",
+        "Lead Mining 1",
+        "Lead Mining 2",
+        "Data Engineer",
+        "QA",
+        "Mining 4",
+        "Operational"
+      ],
+      "remaining_quota": 1
+    },
+    "Jakarta": {
+      "teams": [
+        "Country Manager",
+        "HRD"
+      ],
+      "remaining_quota": 0
+    },
+    "West Nusa Tenggara": {
+      "teams": [
+        "Ansys",
+        "Mining 3",
+        "External 2",
+        "IT",
+        "Control"
+      ],
+      "remaining_quota": 0
+    },
+    "North Maluku": {
+      "teams": [
+        "Embedded",
+        "RnD",
+        "Planning"
+      ],
+      "remaining_quota": 1
+    }
+  },
+  {
+    "Central Papua": {
+      "teams": [
+        "Accountant",
+        "Mining 6",
+        "External 1",
+        "Mining 3",
+        "External 2",
+        "Country Manager",
+        "HRD",
+        "Electrical Team"
+      ],
+      "remaining_quota": 0
+    },
+    "Bogor": {
+      "teams": [
+        "Mechanical",
+        "PM 1",
+        "Lead Mining 1",
+        "Lead Mining 2",
+        "Data Engineer",
+        "QA",
+        "PM 2"
+      ],
+      "remaining_quota": 1
+    },
+    "East Java": {
+      "teams": [
+        "Mining 5",
+        "Lead Mining 5",
+        "Planning",
+        "Mining 2",
+        "Operational"
+      ],
+      "remaining_quota": 1
+    },
+    "Jakarta": {
+      "teams": [
+        "Country Manager",
+        "HRD"
+      ],
+      "remaining_quota": 0
+    },
+    "West Nusa Tenggara": {
+      "teams": [
+        "Ansys",
+        "RnD",
+        "Control"
+      ],
+      "remaining_quota": 0
+    },
+    "North Maluku": {
+      "teams": [
+        "Embedded",
+        "Ansys",
+        "Sales",
+        "Presales",
+        "Mining 4",
+        "Mining 7",
+        "IT"
+      ],
+      "remaining_quota": 0
+    }
+  },
+  {
+    "Central Papua": {
+      "teams": [
+        "Accountant",
+        "Data Engineer",
+        "QA",
+        "IT",
+        "PM 2"
+      ],
+      "remaining_quota": 0
+    },
+    "Bogor": {
+      "teams": [
+        "Mechanical",
+        "Mining 5",
+        "Lead Mining 5",
+        "Country Manager",
+        "HRD",
+        "Ansys",
+        "Sales",
+        "Mining 4",
+        "Operational"
+      ],
+      "remaining_quota": 0
+    },
+    "East Java": {
+      "teams": [
+        "PM 1",
+        "Lead Mining 1",
+        "Lead Mining 2",
+        "Presales",
+        "Mining 2",
+        "Mining 7",
+        "Electrical Team"
+      ],
+      "remaining_quota": 3
+    },
+    "Jakarta": {
+      "teams": [
+        "Country Manager",
+        "HRD"
+      ],
+      "remaining_quota": 0
+    },
+    "West Nusa Tenggara": {
+      "teams": [
+        "Ansys",
+        "Control",
+        "Planning"
       ],
       "remaining_quota": 6
+    },
+    "North Maluku": {
+      "teams": [
+        "Embedded",
+        "Mining 6",
+        "External 1",
+        "Mining 3",
+        "External 2"
+      ],
+      "remaining_quota": 3
+    }
+  },
+  {
+    "Central Papua": {
+      "teams": [
+        "Accountant",
+        "Electrical Team",
+        "Mining 2",
+        "IT",
+        "PM 2",
+        "Mining 7"
+      ],
+      "remaining_quota": 0
+    },
+    "Bogor": {
+      "teams": [
+        "Mechanical",
+        "Data Engineer",
+        "QA",
+        "Presales"
+      ],
+      "remaining_quota": 1
+    },
+    "East Java": {
+      "teams": [
+        "PM 1",
+        "Lead Mining 1",
+        "Lead Mining 2",
+        "RnD",
+        "Operational"
+      ],
+      "remaining_quota": 3
+    },
+    "Jakarta": {
+      "teams": [
+        "Country Manager",
+        "HRD",
+        "Country Manager",
+        "HRD"
+      ],
+      "remaining_quota": 0
+    },
+    "West Nusa Tenggara": {
+      "teams": [
+        "Ansys",
+        "Mining 5",
+        "Lead Mining 5",
+        "Mining 3",
+        "External 2",
+        "Planning"
+      ],
+      "remaining_quota": 1
+    },
+    "North Maluku": {
+      "teams": [
+        "Embedded",
+        "Mining 6",
+        "External 1",
+        "Ansys",
+        "Sales",
+        "Control"
+      ],
+      "remaining_quota": 1
+    }
+  },
+  {
+    "Central Papua": {
+      "teams": [
+        "Accountant",
+        "PM 1",
+        "Lead Mining 1",
+        "Lead Mining 2",
+        "RnD"
+      ],
+      "remaining_quota": 0
+    },
+    "Bogor": {
+      "teams": [
+        "Mechanical",
+        "Data Engineer",
+        "QA",
+        "Country Manager",
+        "HRD",
+        "Ansys",
+        "Sales",
+        "PM 2",
+        "Mining 7",
+        "Electrical Team"
+      ],
+      "remaining_quota": 0
+    },
+    "East Java": {
+      "teams": [
+        "Mining 2",
+        "Operational",
+        "Mining 4",
+        "Planning"
+      ],
+      "remaining_quota": 3
+    },
+    "Jakarta": {
+      "teams": [
+        "Country Manager",
+        "HRD"
+      ],
+      "remaining_quota": 0
+    },
+    "West Nusa Tenggara": {
+      "teams": [
+        "Ansys",
+        "Mining 3",
+        "External 2",
+        "Control",
+        "Presales"
+      ],
+      "remaining_quota": 0
+    },
+    "North Maluku": {
+      "teams": [
+        "Embedded",
+        "Mining 5",
+        "Lead Mining 5",
+        "Mining 6",
+        "External 1"
+      ],
+      "remaining_quota": 3
+    }
+  },
+  {
+    "Central Papua": {
+      "teams": [
+        "Accountant",
+        "Data Engineer",
+        "QA",
+        "Electrical Team",
+        "Planning"
+      ],
+      "remaining_quota": 0
+    },
+    "Bogor": {
+      "teams": [
+        "Mechanical",
+        "Mining 5",
+        "Lead Mining 5",
+        "Mining 6",
+        "External 1",
+        "PM 2"
+      ],
+      "remaining_quota": 0
+    },
+    "East Java": {
+      "teams": [
+        "Mining 2",
+        "Mining 4",
+        "Mining 7",
+        "Operational",
+        "IT"
+      ],
+      "remaining_quota": 1
+    },
+    "Jakarta": {
+      "teams": [
+        "Country Manager",
+        "HRD"
+      ],
+      "remaining_quota": 0
+    },
+    "West Nusa Tenggara": {
+      "teams": [
+        "Ansys",
+        "PM 1",
+        "Lead Mining 1",
+        "Lead Mining 2",
+        "Mining 3",
+        "External 2",
+        "Ansys",
+        "Sales",
+        "Control"
+      ],
+      "remaining_quota": 0
+    },
+    "North Maluku": {
+      "teams": [
+        "Embedded",
+        "Country Manager",
+        "HRD",
+        "RnD",
+        "Presales"
+      ],
+      "remaining_quota": 1
+    }
+  },
+  {
+    "Central Papua": {
+      "teams": [
+        "Accountant",
+        "Mining 2",
+        "Control",
+        "PM 2"
+      ],
+      "remaining_quota": 0
+    },
+    "Bogor": {
+      "teams": [
+        "Mechanical",
+        "Mining 5",
+        "Lead Mining 5",
+        "Operational",
+        "Presales",
+        "Electrical Team"
+      ],
+      "remaining_quota": 0
+    },
+    "East Java": {
+      "teams": [
+        "Data Engineer",
+        "QA",
+        "Mining 6",
+        "External 1",
+        "Planning"
+      ],
+      "remaining_quota": 0
+    },
+    "Jakarta": {
+      "teams": [
+        "Country Manager",
+        "HRD",
+        "Country Manager",
+        "HRD"
+      ],
+      "remaining_quota": 0
+    },
+    "West Nusa Tenggara": {
+      "teams": [
+        "Ansys",
+        "PM 1",
+        "Lead Mining 1",
+        "Lead Mining 2",
+        "IT",
+        "RnD"
+      ],
+      "remaining_quota": 0
+    },
+    "North Maluku": {
+      "teams": [
+        "Embedded",
+        "Mining 3",
+        "External 2",
+        "Ansys",
+        "Sales",
+        "Mining 4",
+        "Mining 7"
+      ],
+      "remaining_quota": 2
+    }
+  },
+  {
+    "Central Papua": {
+      "teams": [
+        "Accountant",
+        "PM 1",
+        "Lead Mining 1",
+        "Lead Mining 2",
+        "Data Engineer",
+        "QA",
+        "Electrical Team",
+        "PM 2"
+      ],
+      "remaining_quota": 0
+    },
+    "Bogor": {
+      "teams": [
+        "Mechanical",
+        "Mining 6",
+        "External 1",
+        "Mining 2",
+        "Operational"
+      ],
+      "remaining_quota": 0
+    },
+    "East Java": {
+      "teams": [
+        "Mining 5",
+        "Lead Mining 5",
+        "Planning",
+        "Mining 4",
+        "IT"
+      ],
+      "remaining_quota": 0
+    },
+    "Jakarta": {
+      "teams": [
+        "Country Manager",
+        "HRD",
+        "Country Manager",
+        "HRD"
+      ],
+      "remaining_quota": 0
+    },
+    "West Nusa Tenggara": {
+      "teams": [
+        "Ansys",
+        "Mining 3",
+        "External 2",
+        "Ansys",
+        "Sales",
+        "RnD"
+      ],
+      "remaining_quota": 0
+    },
+    "North Maluku": {
+      "teams": [
+        "Embedded",
+        "Control",
+        "Presales",
+        "Mining 7"
+      ],
+      "remaining_quota": 2
     }
   }
 ]

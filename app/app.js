@@ -17,8 +17,8 @@ const MONTHS = [
 ];
 
 export default async function app() {
-  const regions = await getDataFromMongo("regions");
-  const teams = await getDataFromMongo("teams");
+  const regions = JSON.parse(fs.readFileSync("regions.json"));
+  const teams = JSON.parse(fs.readFileSync("teams.json"));
   const rules = JSON.parse(fs.readFileSync("rules_region_and_team.json"));
   const teamSizeMap = {};
   teams.forEach((team) => {
