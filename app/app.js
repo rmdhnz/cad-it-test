@@ -1,39 +1,50 @@
-import getDataFromMongo from "./utils/getDataFromMongo.js";
-import assignMonthlyAllocation from "./assignMonthlyAllocation.js";
 import fs from "fs";
-const MONTHS = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
+const teams = JSON.parse(fs.readFileSync("teams.json"));
+const regions = JSON.parse(fs.readFileSync("regions.json"));
+const rules = JSON.parse(fs.readFileSync("rules_region_and_team.json"));
+import assignMonthlyAllocation from "./assignMonthlyAllocation.js";
+export default function app() {
+  const MONTHS = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
 
-export default async function app() {
-  const regions = JSON.parse(fs.readFileSync("regions.json"));
-  const teams = JSON.parse(fs.readFileSync("teams.json"));
-  const rules = JSON.parse(fs.readFileSync("rules_region_and_team.json"));
   const teamSizeMap = {};
   teams.forEach((team) => {
     teamSizeMap[team.name] = team.total_member;
   });
-
-  // Generate allocations per month and write to JSON file
-  const file_allocation = [];
+  let full_allocation = [];
+  let lastMonthAllocation = null;
   MONTHS.forEach((month) => {
-    const monthlyAllocation = assignMonthlyAllocation(
-      month,
-      regions,
-      rules,
-      teamSizeMap
-    );
+    let monthlyAllocation;
+    let attempts = 0;
+    const maxAttempts = 10;
+    while (attempts < maxAttempts) {
+      try {
+        monthlyAllocation = assignMonthlyAllocation(
+          month,
+          regions,
+          rules,
+          teamSizeMap
+        );
+        break;
+      } catch (e) {
+        attempts++;
+        if (attempts === maxAttempts) throw e;
+      }
+    }
+
+    lastMonthAllocation = monthlyAllocation;
     const result = {};
     for (const region in monthlyAllocation) {
       result[region] = {
@@ -43,15 +54,16 @@ export default async function app() {
       };
     }
     fs.writeFileSync(
-      `allocation/allocation_${month}.json`,
+      `rev-allocation/allocation_${month}.json`,
       JSON.stringify(result, null, 2)
     );
-    file_allocation.push(result);
+    full_allocation.push(result);
     console.log(`✅ Allocation saved: allocation_${month}.json`);
   });
+
   fs.writeFileSync(
-    "all_allocation.json",
-    JSON.stringify(file_allocation, null, 2)
+    "rev-all_allocation.json",
+    JSON.stringify(full_allocation, null, 2)
   );
-  console.log(`✅ All Allocation saved: all_alocation.json`);
+  console.log(`✅ All Allocation saved: all_allocation.json`);
 }
