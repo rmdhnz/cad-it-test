@@ -1,11 +1,20 @@
 // const fs = require("fs");
 import fs from "fs";
-import { resourceUsage } from "process";
-import { CLIENT_RENEG_LIMIT } from "tls";
-const allocations = JSON.parse(fs.readFileSync("all_allocation.json"));
+import { exit } from "process";
+
+const allocations = JSON.parse(fs.readFileSync("rev-all_allocation.json"));
 const regions = JSON.parse(fs.readFileSync("regions.json"));
 const rules = JSON.parse(fs.readFileSync("rules_region_and_team.json"));
 
+let total_remaining = new Array(allocations.length).fill(0);
+console.log(total_remaining);
+allocations.forEach((allocation) => {
+  for (let region in allocation) {
+    total_remaining[allocation[region].remaining_quota] +=
+      allocation[region].remaining_quota;
+  }
+});
+exit();
 // cek fixed timm tiap region
 const checkFixedTeamEachRegion = {};
 rules.fixed_team_in_region.forEach((region) => {

@@ -17,6 +17,7 @@ teams.forEach((team) => {
 });
 
 const allocation = createEmptyAllocation(regions);
+
 console.log("Alokasi awal: ");
 console.log(allocation);
 // Exit early for testing purposes
@@ -27,7 +28,7 @@ rules.fixed_team_in_region.forEach((rule) => {
     const size = teamSizeLeft[team] || 0;
     region.teams.push(team);
     region.used += size;
-    region.quota -= size;
+    region.remaining_quota -= size;
     delete teamSizeLeft[team];
   });
 });
@@ -37,7 +38,6 @@ console.log(allocation);
 
 console.log(`Sisa tim yang belum dialokasikan: `);
 console.log(teamSizeLeft);
-
 // lanjut ke proses grouping
 console.log("Lanjut ke proses Grouping");
 
@@ -61,7 +61,7 @@ groupedTeams.forEach((group) => {
       group.forEach((team) => {
         region.teams.push(team);
         region.used += teamSizeLeft[team] || 0;
-        region.quota -= teamSizeLeft[team] || 0;
+        region.remaining_quota -= teamSizeLeft[team] || 0;
         delete teamSizeLeft[team];
       });
       break;
@@ -85,7 +85,7 @@ remainingTeams.forEach((team) => {
     if (region.used + teamSize <= region.quota) {
       region.teams.push(team);
       region.used += teamSize;
-      region.quota -= teamSize;
+      region.remaining_quota -= teamSize;
       delete teamSizeLeft[team];
     }
   }
@@ -94,3 +94,9 @@ console.log("Alokasi Akhir: ");
 console.log(allocation);
 console.log("Tim yang belum dialokasikan:");
 console.log(teamSizeLeft);
+console.log("Total Quota yang tidak terisi : ");
+let totalQuota = 0;
+for (const region in allocation) {
+  totalQuota += allocation[region].remaining_quota;
+}
+console.log(totalQuota);

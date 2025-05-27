@@ -5,6 +5,7 @@ export default function createEmptyAllocation(collections_name) {
       quota: collection_name.quota,
       teams: [],
       used: 0,
+      remaining_quota: collection_name.quota,
     };
   });
   return allocation;
