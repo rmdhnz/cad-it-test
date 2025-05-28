@@ -16,7 +16,7 @@ app.get("/allocations", (req, res) => {
 });
 
 app.get("/oee", (req, res) => {
-  fs.readFile("./oee_results.json", "utf8", (err, data) => {
+  fs.readFile("./rev-oee_results.json", "utf8", (err, data) => {
     if (err) {
       return res.status(500).json({ message: err.message });
     }
@@ -26,7 +26,7 @@ app.get("/oee", (req, res) => {
 });
 
 app.get("/multiple-oee", (req, res) => {
-  fs.readFile("./multiple_oee_results.json", "utf8", (err, data) => {
+  fs.readFile("./rev-oee_results.json", "utf8", (err, data) => {
     if (err) {
       return res.status(500).json({ message: err.message });
     }

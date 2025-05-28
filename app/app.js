@@ -54,7 +54,7 @@ export default function app() {
       };
     }
     fs.writeFileSync(
-      `rev-allocation/allocation_${month}.json`,
+      `allocation/allocation_${month}.json`,
       JSON.stringify(result, null, 2)
     );
     full_allocation.push(result);

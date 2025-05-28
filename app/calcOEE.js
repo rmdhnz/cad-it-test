@@ -1,33 +1,21 @@
-import parseTime from "./utils/parseTime.js";
-import calculateOEEPerDay from "./calculateOEEPerDay.js";
 import fs from "fs";
-import getDataFromMongo from "./utils/getDataFromMongo.js";
 import multiCalculateOEE from "./multiCalculateOEE.js";
+import oeeCategory from "./utils/oeeCategory.js";
+const status = JSON.parse(fs.readFileSync("status.json"));
+const production = JSON.parse(fs.readFileSync("production.json"));
 
-export default async function run(multiple = false) {
-  const status = await getDataFromMongo("status_data");
-  const production = await getDataFromMongo("production");
-  if (multiple) {
-    const result = multiCalculateOEE(status, production);
-    console.table(result);
-  } else {
-    // Group produksi berdasarkan tanggal
-    const productionByDate = {};
-    for (const p of production) {
-      const date = parseTime(p.start_production).toISODate();
-      if (!productionByDate[date]) productionByDate[date] = [];
-      productionByDate[date].push(p);
-    }
+export default function run() {
+  const { result, totalAvgAvailability, totalAvgPerformance, totalAvgQuality } =
+    multiCalculateOEE(status, production);
 
-    // Hitung OEE untuk setiap tanggal
-    const results = [];
-    for (const date in productionByDate) {
-      results.push(calculateOEEPerDay(date, productionByDate[date], status));
-    }
+  console.table(result);
 
-    // Tampilkan hasil
-    console.table(results);
-    fs.writeFileSync("oee_results.json", JSON.stringify(results, null, 2));
-    console.log("✅ OEE results saved to oee_results.json");
-  }
+  console.log("\n📈 Rata-Rata Total:");
+  console.log("Availability:", totalAvgAvailability);
+  console.log("Performance :", totalAvgPerformance);
+  console.log("Quality     :", totalAvgQuality);
+  let oee = totalAvgAvailability * totalAvgQuality * totalAvgPerformance;
+  console.log("OEE Gabungan : " + oee);
+  console.log("Klasifikasi OEE: " + oeeCategory(oee));
+  fs.writeFileSync("rev-oee_results.json", JSON.stringify(result, null, 2));
 }

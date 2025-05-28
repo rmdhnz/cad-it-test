@@ -1,13 +1,15 @@
 import { DateTime, Interval } from "luxon";
 import parseTime from "./utils/parseTime.js";
-import oeeCategory from "./utils/oeeCategory.js";
-import totalDefectQuantity from "./utils/totalDefectQuantity.js";
-import totalPlannedDuration from "./utils/totalPlannedDuration.js";
-import totalPlannedQuantity from "./utils/totalPlannedQuantity.js";
+import avgOfEquipmentMap from "./utils/avgOfEquipmentMap.js";
+import splitStatusAcrossMidnight from "./utils/splitStatusAcrossMidnight.js";
 import totalActualQuantity from "./utils/totalActualQuantity.js";
-import fs from "fs";
+import totalDefectQuantity from "./utils/totalDefectQuantity.js";
+import totalPlannedQuantity from "./utils/totalPlannedQuantity.js";
 export default function multiCalculateOEE(status, production) {
-  const prodMap = {}; // { equipment_id: { date: [productions] } }
+  status = splitStatusAcrossMidnight(status);
+
+  const prodMap = {};
+
   for (const p of production) {
     const eid = p.equipment_id;
     const date = parseTime(p.start_production).toISODate();
@@ -17,8 +19,15 @@ export default function multiCalculateOEE(status, production) {
   }
 
   const result = [];
+  const availabilitySummary = {};
+  const performanceSummary = {};
+  const qualitySummary = {};
 
   for (const eid in prodMap) {
+    availabilitySummary[eid] = [];
+    performanceSummary[eid] = [];
+    qualitySummary[eid] = [];
+
     for (const date in prodMap[eid]) {
       const dayInterval = Interval.fromDateTimes(
         DateTime.fromISO(date).startOf("day"),
@@ -28,8 +37,7 @@ export default function multiCalculateOEE(status, production) {
       const prodList = prodMap[eid][date];
       let plannedQty = totalPlannedQuantity(prodList),
         actualQty = totalActualQuantity(prodList),
-        defectQty = totalDefectQuantity(prodList),
-        totalPlannedTime = totalPlannedDuration(prodList);
+        defectQty = totalDefectQuantity(prodList);
 
       let running = 0,
         idle = 0,
@@ -58,6 +66,10 @@ export default function multiCalculateOEE(status, production) {
       const quality = actualQty > 0 ? (actualQty - defectQty) / actualQty : 0;
       const oee = availability * performance * quality;
 
+      availabilitySummary[eid].push(availability);
+      performanceSummary[eid].push(performance);
+      qualitySummary[eid].push(quality);
+
       result.push({
         equipment_id: eid,
         date,
@@ -65,16 +77,19 @@ export default function multiCalculateOEE(status, production) {
         performance: performance.toFixed(4),
         quality: quality.toFixed(4),
         oee: oee.toFixed(4),
-        category: oeeCategory(oee),
       });
     }
   }
 
-  fs.writeFileSync(
-    "multiple_oee_results.json",
-    JSON.stringify(result, null, 2)
-  );
-  console.log("✅ Multiple OEE results saved to multiple_oee_results.json");
+  const totalAvgAvailability =
+    avgOfEquipmentMap(availabilitySummary).toFixed(4);
+  const totalAvgPerformance = avgOfEquipmentMap(performanceSummary).toFixed(4);
+  const totalAvgQuality = avgOfEquipmentMap(qualitySummary).toFixed(4);
 
-  return result;
+  return {
+    result,
+    totalAvgAvailability,
+    totalAvgPerformance,
+    totalAvgQuality,
+  };
 }

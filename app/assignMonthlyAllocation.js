@@ -63,19 +63,19 @@ export default function assignMonthlyAllocation(
   // Check all teams are allocated
   if (Object.keys(teamSizeLeft).length > 0) {
     throw new Error(
-      `❌ Tidak semua tim teralokasi pada bulan ${month}: ${Object.keys(
+      `Tidak semua tim teralokasi pada bulan ${month}: ${Object.keys(
         teamSizeLeft
       ).join(", ")}`
     );
   }
 
-  // Check remaining quota constraint
+  // cek untuk quota tidak lebih dari 2 untuk tiap region
   for (const regionName in allocation) {
     const region = allocation[regionName];
     const remaining = region.quota - region.used;
     if (remaining > 2) {
       throw new Error(
-        `❌ Remaining quota lebih dari 2 di region ${regionName} untuk bulan ${month}`
+        `Remaining quota lebih dari 2 di region ${regionName} untuk bulan ${month}`
       );
     }
   }
@@ -89,7 +89,7 @@ export default function assignMonthlyAllocation(
         : "";
       if (currentTeams === previousTeams) {
         throw new Error(
-          `❌ Kombinasi tim di region ${region} sama dengan bulan sebelumnya (${month})`
+          `Kombinasi tim di region ${region} sama dengan bulan sebelumnya (${month})`
         );
       }
     }
