@@ -6,6 +6,7 @@ Siapkan satu folder untuk tempat cloning repository dan pastikan terminal kita b
 
 ```shell
     > git clone https://github.com/rmdhnz/cad-it-test.git
+    > npm install
 ```
 
 ## 🧠 Struktur Folder
