@@ -94,6 +94,7 @@ export default function assignMonthlyAllocation(
       }
     }
   }
+  console.log("Tim size left : ", teamSizeLeft);
 
   return allocation;
 }

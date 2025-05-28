@@ -4,19 +4,21 @@
       "Accountant",
       "Mining 5",
       "Lead Mining 5",
-      "Mining 6",
-      "External 1",
-      "Electrical Team"
+      "Country Manager",
+      "HRD",
+      "PM 2",
+      "Presales",
+      "Mining 7"
     ],
     "remaining_quota": 0
   },
   "Bogor": {
     "teams": [
       "Mechanical",
-      "Data Engineer",
-      "QA",
+      "Planning",
       "Mining 4",
-      "PM 2"
+      "IT",
+      "Electrical Team"
     ],
     "remaining_quota": 0
   },
@@ -25,11 +27,9 @@
       "PM 1",
       "Lead Mining 1",
       "Lead Mining 2",
-      "Ansys",
-      "Sales",
-      "Control",
-      "Mining 7",
-      "Presales"
+      "Mining 2",
+      "Operational",
+      "Control"
     ],
     "remaining_quota": 1
   },
@@ -52,12 +52,12 @@
   "North Maluku": {
     "teams": [
       "Embedded",
-      "Country Manager",
-      "HRD",
-      "Mining 2",
-      "Operational",
-      "Planning",
-      "IT"
+      "Data Engineer",
+      "QA",
+      "Mining 6",
+      "External 1",
+      "Ansys",
+      "Sales"
     ],
     "remaining_quota": 0
   }

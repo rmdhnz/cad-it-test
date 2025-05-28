@@ -5,34 +5,31 @@
       "PM 1",
       "Lead Mining 1",
       "Lead Mining 2",
-      "Mining 5",
-      "Lead Mining 5",
-      "IT"
+      "Mining 6",
+      "External 1",
+      "Presales"
     ],
     "remaining_quota": 0
   },
   "Bogor": {
     "teams": [
       "Mechanical",
-      "Mining 3",
-      "External 2",
-      "Ansys",
-      "Sales",
-      "Planning",
-      "Electrical Team",
-      "PM 2"
+      "Data Engineer",
+      "QA",
+      "Mining 2"
     ],
     "remaining_quota": 0
   },
   "East Java": {
     "teams": [
-      "Data Engineer",
-      "QA",
+      "Mining 3",
+      "External 2",
       "Country Manager",
       "HRD",
-      "Presales",
       "Mining 7",
-      "Mining 4"
+      "IT",
+      "Mining 4",
+      "Operational"
     ],
     "remaining_quota": 0
   },
@@ -46,17 +43,20 @@
   "West Nusa Tenggara": {
     "teams": [
       "Ansys",
+      "Ansys",
+      "Sales",
+      "Planning",
       "RnD",
-      "Mining 2",
-      "Operational"
+      "PM 2",
+      "Electrical Team"
     ],
     "remaining_quota": 0
   },
   "North Maluku": {
     "teams": [
       "Embedded",
-      "Mining 6",
-      "External 1",
+      "Mining 5",
+      "Lead Mining 5",
       "Control"
     ],
     "remaining_quota": 2
