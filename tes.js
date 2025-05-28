@@ -1,6 +1,4 @@
 import fs from "fs";
-import createEmptyAllocation from "./app/utils/createEmptyAllocation.js";
-import { exit } from "process";
 const teams = JSON.parse(fs.readFileSync("teams.json"));
 const regions = JSON.parse(fs.readFileSync("regions.json"));
 const rules = JSON.parse(fs.readFileSync("rules_region_and_team.json"));

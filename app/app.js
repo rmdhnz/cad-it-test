@@ -62,7 +62,7 @@ export default function app() {
   });
 
   fs.writeFileSync(
-    "rev-all_allocation.json",
+    "all_allocation.json",
     JSON.stringify(full_allocation, null, 2)
   );
   console.log(`✅ All Allocation saved: all_allocation.json`);

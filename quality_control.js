@@ -1,6 +1,6 @@
 // const fs = require("fs");
 import fs from "fs";
-const allocations = JSON.parse(fs.readFileSync("rev-all_allocation.json"));
+const allocations = JSON.parse(fs.readFileSync("all_allocation.json"));
 const regions = JSON.parse(fs.readFileSync("regions.json"));
 const rules = JSON.parse(fs.readFileSync("rules_region_and_team.json"));
 
