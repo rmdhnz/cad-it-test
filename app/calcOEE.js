@@ -17,5 +17,5 @@ export default function run() {
   let oee = totalAvgAvailability * totalAvgQuality * totalAvgPerformance;
   console.log("OEE Gabungan : " + oee);
   console.log("Klasifikasi OEE: " + oeeCategory(oee));
-  fs.writeFileSync("rev-oee_results.json", JSON.stringify(result, null, 2));
+  fs.writeFileSync("oee_results.json", JSON.stringify(result, null, 2));
 }
